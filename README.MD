@@ -2,13 +2,17 @@
 
 ## Table of Contents
 - Description
+- Links
 - Image
 - Features
 - Usage
 - Contributions
 
 ## Description
-This project refactors the HTML and CSS files of the Horiseon website. The goal is to optimize search engine optimization (SEO) by making the code more accessible and condesned, while improving readablity. 
+This project refactors the HTML and CSS files of the Horiseon website. The goal is to optimize search engine optimization (SEO) by making the code more accessible and condensed, while improving readability. 
+
+## Links
+https://nguyent0275.github.io/horiseon-seo-refactor/
 
 ## Image
 ![Alt text](/Assets/Horiseon-Wesbite.png.jpg)
@@ -27,7 +31,6 @@ This project refactors the HTML and CSS files of the Horiseon website. The goal 
 ## Contributions
 1. Fork the repository.
 2. Create a new branch for your feature or bug fix. (git checkout -b feature/your-feature.)
-3. Make your changes and commit them with descriptive commit messages.(git commit -m "your commit message")
+3. Make your changes and commit them with descriptive commit messages. (git commit -m "your commit message")
 4. Push your changes to your forked repository. (git push origin feature/your-feature)
 5. Create a pull request to the main branch of this repository.
-
