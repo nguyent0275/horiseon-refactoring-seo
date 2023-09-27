@@ -5,6 +5,7 @@
 }
 
 /* changed element selectors to reflect the semantic html changes. Fixed order of the css page for easier reading and matching with the html's order format.  */
+
 body {
     background-color: #d9dcd6;
 }
@@ -42,67 +43,24 @@ a {
 p {
     font-size: 16px;
 }
-/* added the image that was previously linked in the .hero class to the html on line 29.  */
-.hero {
-    height: 800px;
+
+/* added the image that was previously linked in the .hero class to the html on line 29. Changed the height from 800px to auto to fix cutoff and improve responsiveness on different resolultions.  */
+#hero {
+    height: auto;
     width: 100%;
     margin-bottom: 25px;
     background-size: cover;
     background-position: center;
 }
+
+/*  */
+/* main content */
+
 /* content class was only used one time in html, so was formatted to an id selector on line 31. #content is affecting the entirety of the <main> tag from line 31 to line 53. */
 #content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
-}
-/* benefits class was only used one time in html, so was formatted to an id selector on line 54. #benefits is affecting the entirety of the <summary> tag from line 54 to 76. */
-#benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-/* refactored .search-engine-optimization img, .float-left, .social-media-marketing img classes into .banner-section-img-left. This is affecting the <img> on line 30 and 44. It is setting the max-height of the images to 200px, while also giving them a float property to the left. There is a right margin of 25px set, to give the image space between it's sibling elements <h2> and <p>. */
-.banner-section-img-left {
-    max-height: 200px;
-    float: left;
-    margin-right: 25px;
-}
-/* refactored .online-reputation-management img and .float-right into banner-section-img-right. This is affecting the <img> on line 37. It is giving the same max-height as the other images in the <main>, but instead positioning the image to the right. With the float property set to right the image starts from the right and the <p> and <h2> elements are positioned to it's left with a margin of 25px seperating them.  */
-.banner-section-img-right {
-    max-height: 200px;
-    float: right;
-    margin-left: 25px;
-}
-
-/* refatored .search-engine-optimization h2, .online-reputation-management h2, .social-media-marketing h2 classes into .banner-section-h2. This is affecting the <h2> withing lines 31, 38, and 45. The <h2> is given a margin from the bottom of 20px that is separating them from the <p> underneath it. The font-size is also set to 36px to signify a title or importance.  */
-.banner-section-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-/* refactored .benefit-lead, .benefit-brand, .benefit-cost classes into .benefit-aside. This is affecting the <aside> on lines 52, 59, 66 of the html. It's giving each of the three individual boxes a bottom margin of 32px. Also changing the text colors of all the elements nested within the <aside> tags. */
-.benefit-aside {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* refactor .benefit-lead h3, .benefit-brand h3, .benefit-cost h3 classes into .benefit-h3. This is affecting the <h3> tags on lines 53, 60, and 67 of the html. It's giving the title cards of the boxes a bottom margin of 10px. It is also aligning the text to the center of the <aside> container.  */
-.benefit-h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-/* refactor .benefit-lead img, benefit-brand img, .benefit-cost img classes int0 .benefit-img. This is affecting the <img> tags on lines 54, 61, and 68 of the html. It is displaying the image on top of one another, while also giving it margin of 10px from the top and bottom of its siblings elements (<p> and <h3>). We're also setting a max-width of the image to fit within it's container and an auto value to center the image. */
-.benefit-img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 /* refactor .search-engine-optimization, .online-reputation-management, .social-media-marketing classes into .banner section.   */
@@ -115,32 +73,68 @@ p {
     color: #ffffff;
 }
 
- #search-engine-optimization {
+/*  It is setting the max-height of the images to 200px, while also giving them a float property to the left. There is a right margin of 25px set, to give the image space between it's sibling elements <h2> and <p>. */
+.banner-section-img-left {
+    max-height: 200px;
+    float: left;
+    margin-right: 25px;
+}
+
+/* It is giving the same max-height as the other images in the <main>, but instead positioning the image to the right. With the float property set to right the image starts from the right and the <p> and <h2> elements are positioned to it's left with a margin of 25px seperating them.  */
+.banner-section-img-right {
+    max-height: 200px;
+    float: right;
+    margin-left: 25px;
+}
+
+/* The <h2> is given a margin from the bottom of 20px that is separating them from the <p> underneath it. The font-size is also set to 36px to signify a title or importance.  */
+.banner-section-h2 {
     margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    font-size: 36px;
+}
+
+/* main content end */
+/*  */
+
+/*  */
+/* benefits summary  */
+
+/* benefits class was only used one time in html, so was formatted to an id selector on line 54. #benefits is affecting the entirety of the <summary> tag from line 54 to 76. */
+#benefits {
+    margin-right: 20px;
+    padding: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #2589bd;
+}
+
+/* It's giving each of the three individual boxes a bottom margin of 32px. Also changing the text colors of all the elements nested within the <aside> tags. */
+.benefit-aside {
+    margin-bottom: 32px;
     color: #ffffff;
 }
 
- #online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+/* It's giving the title cards of the boxes a bottom margin of 10px. It is also aligning the text to the center of the <aside> container.  */
+.benefit-h3 {
+    margin-bottom: 10px;
+    text-align: center;
 }
 
- #social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff; 
+/* It is displaying the images on top of one another, while also giving it margin of 10px from the top and bottom of its siblings elements (<p> and <h3>). We're also setting a max-width of the image to fit within it's container and an auto value to center the image. */
+.benefit-img {
+    display: block;
+    margin: 10px auto;
+    max-width: 150px;
 }
+
+/* benefits summary end */
+/*  */
+
+/*  */
+/* footer */
 
 /* change .footer class into footer element. Removed bloat class that was affecting the footer element in line 74. */
 footer {
@@ -153,3 +147,6 @@ footer {
 footer h2 {
     font-size: 20px;
 }
+
+/* footer end */
+/*  */
