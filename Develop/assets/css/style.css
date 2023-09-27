@@ -44,7 +44,7 @@ p {
     font-size: 16px;
 }
 
-/* added the image that was previously linked in the .hero class to the html on line 29. Changed the height from 800px to auto to fix cutoff and improve responsiveness on different resolultions.  */
+/* added the image that was previously linked in the .hero class to the html on line 29 and changed to an id. Changed the height from 800px to auto to fix cutoff and improve responsiveness on different resolultions.  */
 #hero {
     height: auto;
     width: 100%;
