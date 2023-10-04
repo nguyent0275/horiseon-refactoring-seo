@@ -15,7 +15,7 @@ This project refactors the HTML and CSS files of the Horiseon website. The goal 
 https://nguyent0275.github.io/horiseon-seo-refactor/
 
 ## Image
-![Alt text](/Assets/Horiseon-Wesbite.png.jpg)
+![Alt text](/Develop/assets/images/Horiseon-Wesbite.png.jpg)
 
 ## Features
 - Semantic HTML: Replaced < div > elements with semantic elements such as, < section > and < article >
